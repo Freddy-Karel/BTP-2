@@ -1,0 +1,156 @@
+[
+  {
+    "id": "fenetre-salle-it",
+    "slug": "fenetre-salle-it",
+    "title": "Aménagement d'une fenêtre — salle IT",
+    "client": "OCT",
+    "clientSlug": "oct",
+    "location": "Bureau / salle IT",
+    "category": "batiments",
+    "objective": "Le projet avait pour de but d’installer aussi une fenêtre coulissante dans la salle open space des IT, dans le respect des règles QHSE dans un délai de 1 jours, répondant au DQE relatif au BDC OCT N°5004.",
+    "startDate": "2026-03-25",
+    "endDate": "2026-03-25",
+    "startLabel": "25/03/2026",
+    "endLabel": "25/03/2026",
+    "refs": [],
+    "before": [
+      "/rapports/fenetre-salle-it/01.png"
+    ],
+    "after": [
+      "/rapports/fenetre-salle-it/02.png",
+      "/rapports/fenetre-salle-it/03.png"
+    ],
+    "cover": "/rapports/fenetre-salle-it/02.png",
+    "sourceFile": "Rapport travaux d'aménagement d’une fenêtre au bureau du responsable IT.docx"
+  },
+  {
+    "id": "abri-bus-zone-u",
+    "slug": "abri-bus-zone-u",
+    "title": "Aménagement d'un abri bus",
+    "client": "OCT",
+    "clientSlug": "oct",
+    "location": "Zone U — conteneur transformé",
+    "category": "travaux",
+    "objective": "Le projet avait en but de transformer dans la zone U, un conteneur accidenté sur le côté en abri bus, dans le respect des règles QHSE dans un délai de 10 jours et répondant au DQE relatif au BDC OCT N°4430.",
+    "startDate": "2026-03-12",
+    "endDate": "2026-03-19",
+    "startLabel": "12/03/2026",
+    "endLabel": "19/03/2026",
+    "refs": [],
+    "before": [
+      "/rapports/abri-bus-zone-u/01.png"
+    ],
+    "after": [
+      "/rapports/abri-bus-zone-u/02.png",
+      "/rapports/abri-bus-zone-u/03.png"
+    ],
+    "cover": "/rapports/abri-bus-zone-u/02.png",
+    "sourceFile": "Rapport_Travaux d'aménagement d'un abri bus.docx"
+  },
+  {
+    "id": "grilles-bordures-caniveaux-t1",
+    "slug": "grilles-bordures-caniveaux-t1",
+    "title": "Installation de grilles et bordures de caniveaux",
+    "client": "OCT",
+    "clientSlug": "oct",
+    "location": "Terminal 1 — zone frigo",
+    "category": "travaux",
+    "objective": "Ce projet avait pour but de retirer de changer les grilles et bordures de caniveaux au terminal 1 dans la zone frigo dans le respect des règles QHSE dans un délai de 7 jours, répondant au DQE relatif aux BDC OCT N°4291 et 4292.",
+    "startDate": "2026-03-11",
+    "endDate": "2026-03-14",
+    "startLabel": "11/03/2026",
+    "endLabel": "14/03/2026",
+    "refs": [
+      "BDC OCT N°4291",
+      "BDC OCT N°4292"
+    ],
+    "before": [
+      "/rapports/grilles-bordures-caniveaux-t1/01.png",
+      "/rapports/grilles-bordures-caniveaux-t1/02.png",
+      "/rapports/grilles-bordures-caniveaux-t1/03.png"
+    ],
+    "after": [
+      "/rapports/grilles-bordures-caniveaux-t1/04.png",
+      "/rapports/grilles-bordures-caniveaux-t1/05.png",
+      "/rapports/grilles-bordures-caniveaux-t1/06.png"
+    ],
+    "cover": "/rapports/grilles-bordures-caniveaux-t1/04.png",
+    "sourceFile": "Rapport_Travaux d'installation de grilles et bordures de caniveau.docx"
+  },
+  {
+    "id": "double-evier-industriel-t1",
+    "slug": "double-evier-industriel-t1",
+    "title": "Installation d'un double évier industriel — T1",
+    "client": "OCT",
+    "clientSlug": "oct",
+    "location": "Terminal 1 — près de l'infirmerie",
+    "category": "batiments",
+    "objective": "Le projet avait en but de rénover le lave main fait d’un double-évier au terminal 1 à côté de l’infirmerie, dans le respect des règles QHSE dans un délai de 3 jours, répondant au DQE relatif au BDC OCT N°4264.",
+    "startDate": "2026-02-23",
+    "endDate": "2026-02-25",
+    "startLabel": "23/02/2026",
+    "endLabel": "25/02/2026",
+    "refs": [],
+    "before": [
+      "/rapports/double-evier-industriel-t1/01.png",
+      "/rapports/double-evier-industriel-t1/02.png"
+    ],
+    "after": [
+      "/rapports/double-evier-industriel-t1/03.png",
+      "/rapports/double-evier-industriel-t1/04.png"
+    ],
+    "cover": "/rapports/double-evier-industriel-t1/03.png",
+    "sourceFile": "Rapport_Travaux d'installation double-évier industriel au T1.docx"
+  },
+  {
+    "id": "conteneur-archives-drh",
+    "slug": "conteneur-archives-drh",
+    "title": "Aménagement conteneur archives DRH",
+    "client": "OCT",
+    "clientSlug": "oct",
+    "location": "Conteneur archives DRH",
+    "category": "batiments",
+    "objective": "Le projet avait en but d’aménager un espace du conteneur des archives DRH, dans le respect des règles QHSE dans un délai de 5 jours, répondant au DQE relatif au BDC OCT N°4143.",
+    "startDate": "2026-02-20",
+    "endDate": "2026-02-23",
+    "startLabel": "20/02/2026",
+    "endLabel": "23/02/2026",
+    "refs": [],
+    "before": [
+      "/rapports/conteneur-archives-drh/01.png",
+      "/rapports/conteneur-archives-drh/02.png"
+    ],
+    "after": [
+      "/rapports/conteneur-archives-drh/03.png",
+      "/rapports/conteneur-archives-drh/04.png",
+      "/rapports/conteneur-archives-drh/05.png"
+    ],
+    "cover": "/rapports/conteneur-archives-drh/03.png",
+    "sourceFile": "Rapport_Travaux d'amenagement conteneur DHR.docx"
+  },
+  {
+    "id": "evier-industriel-t1",
+    "slug": "evier-industriel-t1",
+    "title": "Installation d'un évier industriel — T1",
+    "client": "OCT",
+    "clientSlug": "oct",
+    "location": "Terminal 1 — zone frigo",
+    "category": "batiments",
+    "objective": "Le projet avait en but de rénover le lave main fait d’un évier au terminal 1 dans la zone frigo dans le respect des règles QHSE dans un délai de 7 jours, répondant au DQE relatif au BDC OCT N°4045.",
+    "startDate": "2026-02-12",
+    "endDate": "2026-02-16",
+    "startLabel": "12/02/2026",
+    "endLabel": "16/02/2026",
+    "refs": [],
+    "before": [
+      "/rapports/evier-industriel-t1/01.png",
+      "/rapports/evier-industriel-t1/02.png"
+    ],
+    "after": [
+      "/rapports/evier-industriel-t1/03.png",
+      "/rapports/evier-industriel-t1/04.png"
+    ],
+    "cover": "/rapports/evier-industriel-t1/03.png",
+    "sourceFile": "Rapport_Travaux d'installation évier industriel au T1.docx"
+  }
+]
