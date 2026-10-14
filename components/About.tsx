@@ -45,7 +45,7 @@ export default function About() {
 
   return (
     <section id="apropos" className="relative overflow-hidden py-20 md:py-28">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-[92rem] px-4 md:px-6">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <div className="space-y-6">
             <span className="section-label">À propos</span>

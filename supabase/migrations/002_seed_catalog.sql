@@ -18,6 +18,63 @@ select * from (values
 ) as v(title, location, image, category, year, sort_order)
 where not exists (select 1 from public.catalog_projects limit 1);
 
+insert into public.catalog_projects
+  (title, location, image, images, description, category, year, client, sort_order, published)
+select * from (values
+  (
+    'Amenagement d''une fenetre - salle IT OCT',
+    'Salle IT / open space',
+    '/rapports/fenetre-salle-it/02.png',
+    array['/rapports/fenetre-salle-it/01.png','/rapports/fenetre-salle-it/02.png','/rapports/fenetre-salle-it/03.png']::text[],
+    'Installation d''une fenetre coulissante dans la salle open space des IT, documentee par rapport de travaux.',
+    'batiments', 2026, 'OCT', 15, true
+  ),
+  (
+    'Amenagement d''un abri bus - OCT zone U',
+    'Zone U - conteneur transforme',
+    '/rapports/abri-bus-zone-u/02.png',
+    array['/rapports/abri-bus-zone-u/01.png','/rapports/abri-bus-zone-u/02.png','/rapports/abri-bus-zone-u/03.png']::text[],
+    'Transformation d''un conteneur accidente en abri bus sur site OCT.',
+    'travaux', 2026, 'OCT', 16, true
+  ),
+  (
+    'Grilles et bordures de caniveaux - OCT T1',
+    'Terminal 1 - zone frigo',
+    '/rapports/grilles-bordures-caniveaux-t1/04.png',
+    array['/rapports/grilles-bordures-caniveaux-t1/01.png','/rapports/grilles-bordures-caniveaux-t1/02.png','/rapports/grilles-bordures-caniveaux-t1/03.png','/rapports/grilles-bordures-caniveaux-t1/04.png','/rapports/grilles-bordures-caniveaux-t1/05.png','/rapports/grilles-bordures-caniveaux-t1/06.png']::text[],
+    'Remplacement des grilles et bordures de caniveaux au Terminal 1, zone frigo.',
+    'travaux', 2026, 'OCT', 17, true
+  ),
+  (
+    'Double evier industriel - OCT T1',
+    'Terminal 1 - pres de l''infirmerie',
+    '/rapports/double-evier-industriel-t1/03.png',
+    array['/rapports/double-evier-industriel-t1/01.png','/rapports/double-evier-industriel-t1/02.png','/rapports/double-evier-industriel-t1/03.png','/rapports/double-evier-industriel-t1/04.png']::text[],
+    'Renovation du lave-mains avec installation d''un double evier industriel.',
+    'batiments', 2026, 'OCT', 18, true
+  ),
+  (
+    'Amenagement conteneur archives DRH - OCT',
+    'Conteneur archives DRH',
+    '/rapports/conteneur-archives-drh/03.png',
+    array['/rapports/conteneur-archives-drh/01.png','/rapports/conteneur-archives-drh/02.png','/rapports/conteneur-archives-drh/03.png','/rapports/conteneur-archives-drh/04.png','/rapports/conteneur-archives-drh/05.png']::text[],
+    'Amenagement d''un espace d''archives DRH avec fermetures, porte coulissante et finitions.',
+    'batiments', 2026, 'OCT', 19, true
+  ),
+  (
+    'Evier industriel - OCT T1 zone frigo',
+    'Terminal 1 - zone frigo',
+    '/rapports/evier-industriel-t1/03.png',
+    array['/rapports/evier-industriel-t1/01.png','/rapports/evier-industriel-t1/02.png','/rapports/evier-industriel-t1/03.png','/rapports/evier-industriel-t1/04.png']::text[],
+    'Renovation du lave-mains avec installation d''un evier industriel au Terminal 1.',
+    'batiments', 2026, 'OCT', 20, true
+  )
+) as v(title, location, image, images, description, category, year, client, sort_order, published)
+where not exists (
+  select 1 from public.catalog_projects p
+  where p.title = v.title and coalesce(p.client, '') = v.client
+);
+
 insert into public.catalog_reports (
   id, slug, title, client, client_slug, location, category, objective,
   start_date, end_date, start_label, end_label, refs, before_images, after_images, cover, sort_order

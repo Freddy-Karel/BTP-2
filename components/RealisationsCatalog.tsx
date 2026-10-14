@@ -310,7 +310,7 @@ export default function RealisationsCatalog({
   const filteredProjects = useMemo(() => {
     let list = projects;
     if (clientRef) {
-      list = list.filter((p) => projectMatchesClient(p.title, clientRef));
+      list = list.filter((p) => projectMatchesClient(p.title, clientRef, p.client));
     }
     if (filter !== "all") {
       list = list.filter((p) => p.category === filter);
@@ -330,7 +330,7 @@ export default function RealisationsCatalog({
   }, [filter, clientRef, reports]);
 
   const baseProjects = clientRef
-    ? projects.filter((p) => projectMatchesClient(p.title, clientRef))
+    ? projects.filter((p) => projectMatchesClient(p.title, clientRef, p.client))
     : projects;
   const baseReports = clientRef
     ? reports.filter((r) => r.clientSlug === clientRef.slug)
@@ -352,7 +352,7 @@ export default function RealisationsCatalog({
       <main>
         <section className="relative overflow-hidden border-b border-white/10 bg-navy">
           <div className="plan-on-dark pointer-events-none absolute inset-0 opacity-50" aria-hidden />
-          <div className="relative mx-auto max-w-7xl px-4 pb-8 pt-[6.5rem] md:px-6 md:pb-10 md:pt-28">
+          <div id="catalogue-hero" className="relative mx-auto max-w-[92rem] px-4 pb-8 pt-[6.5rem] md:px-6 md:pb-10 md:pt-28">
             <Link
               href="/#realisations"
               className="inline-flex items-center gap-1 text-[12px] font-medium text-white/48 transition hover:text-white"
@@ -398,8 +398,8 @@ export default function RealisationsCatalog({
           </div>
         </section>
 
-        <section className="sticky top-0 z-30 border-b border-white/10 bg-navy/95 backdrop-blur-md">
-          <div className="mx-auto flex max-w-7xl items-center gap-2 overflow-x-auto px-4 py-3 md:px-6">
+        <section className="sticky top-16 z-20 border-b border-white/10 bg-navy/95 backdrop-blur-md md:top-[4.5rem]">
+          <div className="mx-auto flex max-w-[92rem] items-center gap-2 overflow-x-auto px-4 py-3 md:px-6">
             <div className="flex items-center gap-2" role="tablist" aria-label="Filtrer les realisations">
               <FilterButton
                 active={filter === "all"}
@@ -425,7 +425,7 @@ export default function RealisationsCatalog({
 
         <div className="bg-sand">
           <section className="border-b border-mist bg-white/80 py-6">
-            <div className="mx-auto max-w-7xl px-4 md:px-6">
+            <div className="mx-auto max-w-[92rem] px-4 md:px-6">
               <div className="flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
                 <div>
                   <p className="text-[11px] font-bold uppercase tracking-[0.16em] text-green">
@@ -451,7 +451,7 @@ export default function RealisationsCatalog({
           </section>
 
           <section id="chantiers-clients" className="py-12 md:py-16">
-            <div className="mx-auto max-w-7xl px-4 md:px-6">
+            <div className="mx-auto max-w-[92rem] px-4 md:px-6">
               <SectionHeading
                 eyebrow="Chantiers clients"
                 title="Projets realises"
@@ -492,7 +492,7 @@ export default function RealisationsCatalog({
           </section>
 
           <section id="rapports-travaux" className="border-y border-mist bg-white/78 py-12 md:py-16">
-            <div className="mx-auto max-w-7xl px-4 md:px-6">
+            <div className="mx-auto max-w-[92rem] px-4 md:px-6">
               <SectionHeading
                 eyebrow="Rapports de travaux"
                 title="Interventions documentees"
@@ -533,7 +533,7 @@ export default function RealisationsCatalog({
           </section>
 
           <section className="bg-sand py-12 md:py-16">
-            <div className="mx-auto max-w-7xl px-4 md:px-6">
+            <div className="mx-auto max-w-[92rem] px-4 md:px-6">
               <div className="rounded-2xl bg-navy px-5 py-6 text-white shadow-modal md:flex md:items-center md:justify-between md:gap-8 md:px-8">
                 <div>
                   <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-green-bright">

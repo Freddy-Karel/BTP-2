@@ -14,7 +14,7 @@ export default function Portfolio({ projects }: { projects: Project[] }) {
   return (
     <section id="realisations" className="relative bg-navy py-20 text-white md:py-28">
       <div className="plan-on-dark pointer-events-none absolute inset-0" aria-hidden />
-      <div className="relative mx-auto max-w-7xl px-4 md:px-6">
+      <div className="relative mx-auto max-w-[92rem] px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-label !text-green-bright">Réalisations</span>
           <h2 className="section-title !mt-3 !text-white">

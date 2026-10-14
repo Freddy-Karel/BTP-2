@@ -188,8 +188,9 @@ export const otherClients = clients.filter((c) => !c.featured);
 export function projectMatchesClient(
   projectTitle: string,
   client: ClientRef,
+  projectClient?: string | null,
 ): boolean {
-  const hay = projectTitle.toLowerCase();
+  const hay = `${projectTitle} ${projectClient ?? ""}`.toLowerCase();
   switch (client.slug) {
     case "pharmacie-forestiers":
       return hay.includes("pharmacie") || hay.includes("forestiers");

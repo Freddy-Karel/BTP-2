@@ -59,7 +59,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="relative overflow-hidden bg-mist/50 py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-[92rem] px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-label">Contact</span>
           <h2 className="section-title">{contact.sectionTitle}</h2>

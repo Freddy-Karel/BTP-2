@@ -29,7 +29,7 @@ export default function Hero({ chantierCount = 0 }: { chantierCount?: number }) 
         <div className="hero-grid absolute inset-0 opacity-25" />
       </div>
 
-      <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-12 px-4 py-28 md:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-32">
+      <div className="relative z-10 mx-auto grid w-full max-w-[92rem] gap-12 px-4 py-28 md:px-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center lg:py-32">
         <div className="space-y-7">
           <p className="animate-fade-up flex flex-wrap items-center gap-x-2 gap-y-1 text-caption text-white/70">
             <MapPin size={15} className="shrink-0 text-green-bright" />

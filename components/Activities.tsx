@@ -458,7 +458,7 @@ export default function Activities({
       id="activites"
       className="relative overflow-hidden bg-sand py-20 md:py-28"
     >
-      <div className="relative mx-auto max-w-7xl px-4 md:px-6">
+      <div className="relative mx-auto max-w-[92rem] px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-label">Activités</span>
           <h2 className="section-title">Ce que nous savons faire</h2>

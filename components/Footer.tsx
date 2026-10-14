@@ -46,7 +46,7 @@ export default function Footer() {
     <footer className="relative border-t border-white/10 bg-navy text-white">
       <div className="plan-on-dark pointer-events-none absolute inset-0 opacity-50" aria-hidden />
 
-      <div className="relative mx-auto max-w-7xl px-4 py-6 md:px-6 md:py-7">
+      <div className="relative mx-auto max-w-[92rem] px-4 py-6 md:px-6 md:py-7">
         <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between md:gap-8">
           {/* Marque + mentions légales */}
           <div className="min-w-0 max-w-md">

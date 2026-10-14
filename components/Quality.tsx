@@ -2,6 +2,7 @@
 
 import {
   Award,
+  ArrowRight,
   CheckCircle2,
   ClipboardCheck,
   HeartPulse,
@@ -26,7 +27,7 @@ export default function Quality({
 }) {
   return (
     <section id="securite" className="py-20 md:py-24">
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-[92rem] px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-label">{content.eyebrow}</span>
           <h2 className="section-title">{content.title}</h2>
@@ -37,10 +38,10 @@ export default function Quality({
           <div className="rounded-2xl bg-navy p-6 text-white md:p-7">
             <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-green text-white">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/12 text-white">
                   <ClipboardCheck size={24} />
                 </div>
-                <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.22em] text-green-bright">
+                <p className="mt-6 text-[11px] font-bold uppercase tracking-[0.22em] text-white/58">
                   {content.methodLabel}
                 </p>
                 <h3 className="mt-2 max-w-xl font-display text-2xl font-bold leading-tight md:text-3xl">
@@ -51,16 +52,23 @@ export default function Quality({
                 </p>
               </div>
 
-              <div className="grid gap-2 sm:grid-cols-5 lg:grid-cols-1 xl:grid-cols-5">
+              <div className="relative grid gap-3 sm:grid-cols-5 lg:grid-cols-1 xl:grid-cols-5">
                 {content.process.map((step, index) => (
                   <div
                     key={`${step}-${index}`}
-                    className="rounded-xl bg-white/8 px-3 py-3 text-center sm:text-left"
+                    className="relative rounded-2xl border border-white/10 bg-white/10 px-3 py-3 text-center shadow-sm sm:text-left"
                   >
-                    <span className="mx-auto flex h-8 w-8 items-center justify-center rounded-lg bg-white/12 text-xs font-bold text-green-bright sm:mx-0">
+                    {index < content.process.length - 1 ? (
+                      <ArrowRight
+                        className="pointer-events-none absolute -right-3 top-1/2 z-10 hidden -translate-y-1/2 text-white/34 xl:block"
+                        size={18}
+                        aria-hidden
+                      />
+                    ) : null}
+                    <span className="mx-auto flex h-8 w-8 items-center justify-center rounded-lg bg-white text-xs font-extrabold text-navy shadow-sm sm:mx-0">
                       {String(index + 1).padStart(2, "0")}
                     </span>
-                    <span className="mt-2 block text-sm font-semibold leading-tight text-white/88">
+                    <span className="mt-2 block text-sm font-semibold leading-tight text-white">
                       {step}
                     </span>
                   </div>
@@ -75,10 +83,10 @@ export default function Quality({
               return (
                 <article
                   key={pillar.id}
-                  className="group rounded-2xl border border-mist bg-white p-6 shadow-sm transition hover:border-green/25 hover:shadow-hover md:p-7"
+                  className="group rounded-2xl border border-mist bg-white p-6 shadow-sm transition hover:border-navy/15 hover:shadow-hover md:p-7"
                 >
                   <div className="flex items-start gap-4">
-                    <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-green-soft text-green transition duration-300 group-hover:bg-green group-hover:text-white">
+                    <div className="flex h-13 w-13 shrink-0 items-center justify-center rounded-2xl bg-navy/6 text-navy transition duration-300 group-hover:bg-navy group-hover:text-white">
                       <Icon size={24} />
                     </div>
                     <div>
@@ -98,7 +106,7 @@ export default function Quality({
                         className="flex items-start gap-2 rounded-xl bg-sand/80 px-3 py-2.5 text-sm text-ink"
                       >
                         <CheckCircle2
-                          className="mt-0.5 shrink-0 text-green"
+                          className="mt-0.5 shrink-0 text-navy/65"
                           size={16}
                         />
                         {item}
@@ -110,7 +118,7 @@ export default function Quality({
             })}
           </div>
 
-          <div className="mt-5 rounded-2xl border border-green/15 bg-green-soft/70 px-5 py-4">
+          <div className="mt-5 rounded-2xl border border-navy/10 bg-sand/70 px-5 py-4">
             <p className="text-sm font-semibold leading-relaxed text-navy">
               {content.commitment}
             </p>

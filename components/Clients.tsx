@@ -308,7 +308,7 @@ export default function Clients({
       id="references"
       className="overflow-hidden border-y border-mist/80 bg-white/70 py-14 backdrop-blur-[2px] md:py-16"
     >
-      <div className="mx-auto max-w-7xl px-4 md:px-6">
+      <div className="mx-auto max-w-[92rem] px-4 md:px-6">
         <div className="mx-auto max-w-2xl text-center">
           <span className="section-label">Références</span>
           <h2 className="section-title">Ils nous ont fait confiance</h2>
